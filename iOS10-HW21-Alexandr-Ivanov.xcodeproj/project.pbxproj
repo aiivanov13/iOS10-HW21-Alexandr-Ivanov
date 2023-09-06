@@ -7,18 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259AE5B5F9BD523422B459FE /* Pods_iOS10_HW21_Alexandr_Ivanov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFBC14CA7DC49B42A77B956 /* Pods_iOS10_HW21_Alexandr_Ivanov.framework */; };
+		F66A45022AA26BA5000F4D65 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66A45012AA26BA5000F4D65 /* DetailView.swift */; };
+		F66A45042AA26F46000F4D65 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66A45032AA26F46000F4D65 /* Enums.swift */; };
+		F6D817DA2AA792C200C1729D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817D92AA792C200C1729D /* UIViewController+Extensions.swift */; };
+		F6D817DC2AA8C98600C1729D /* CharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817DB2AA8C98600C1729D /* CharactersPresenter.swift */; };
+		F6D817E02AA8CA1A00C1729D /* CharactersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817DF2AA8CA1A00C1729D /* CharactersProtocols.swift */; };
+		F6D817E22AA8D12F00C1729D /* CharactersModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817E12AA8D12F00C1729D /* CharactersModule.swift */; };
+		F6D817E42AA8E0B400C1729D /* DetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817E32AA8E0B400C1729D /* DetailModule.swift */; };
+		F6D817E82AA8E10D00C1729D /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817E72AA8E10D00C1729D /* DetailProtocols.swift */; };
+		F6D817EA2AA8E11A00C1729D /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817E92AA8E11A00C1729D /* DetailPresenter.swift */; };
+		F6D817EC2AA8E35900C1729D /* CharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817EB2AA8E35900C1729D /* CharactersRouter.swift */; };
+		F6D817EE2AA8E9E600C1729D /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D817ED2AA8E9E600C1729D /* DetailRouter.swift */; };
+		F6D96C662AA0F30C001C268E /* MarvelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D96C652AA0F30C001C268E /* MarvelModel.swift */; };
+		F6D96C682AA123A8001C268E /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D96C672AA123A8001C268E /* CharacterTableViewCell.swift */; };
+		F6D96C6D2AA13130001C268E /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D96C6C2AA13130001C268E /* RequestService.swift */; };
+		F6D96C702AA1370E001C268E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D96C6F2AA1370E001C268E /* String+Extensions.swift */; };
+		F6D96C722AA13E1E001C268E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D96C712AA13E1E001C268E /* Keys.swift */; };
+		F6D96C772AA24E21001C268E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6D96C762AA24E21001C268E /* SnapKit */; };
 		F6F044162AA0BE1800F8234D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F044152AA0BE1800F8234D /* AppDelegate.swift */; };
 		F6F044182AA0BE1800F8234D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F044172AA0BE1800F8234D /* SceneDelegate.swift */; };
-		F6F0441A2AA0BE1800F8234D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F044192AA0BE1800F8234D /* ViewController.swift */; };
+		F6F0441A2AA0BE1800F8234D /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F044192AA0BE1800F8234D /* CharactersView.swift */; };
 		F6F0441F2AA0BE1900F8234D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F0441E2AA0BE1900F8234D /* Assets.xcassets */; };
 		F6F044222AA0BE1900F8234D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6F044202AA0BE1900F8234D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13C1DEE18349896463807B30 /* Pods-iOS10-HW21-Alexandr-Ivanov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS10-HW21-Alexandr-Ivanov.release.xcconfig"; path = "Target Support Files/Pods-iOS10-HW21-Alexandr-Ivanov/Pods-iOS10-HW21-Alexandr-Ivanov.release.xcconfig"; sourceTree = "<group>"; };
+		1EFBC14CA7DC49B42A77B956 /* Pods_iOS10_HW21_Alexandr_Ivanov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS10_HW21_Alexandr_Ivanov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4CABBC65BA05F3C1F8A456 /* Pods-iOS10-HW21-Alexandr-Ivanov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS10-HW21-Alexandr-Ivanov.debug.xcconfig"; path = "Target Support Files/Pods-iOS10-HW21-Alexandr-Ivanov/Pods-iOS10-HW21-Alexandr-Ivanov.debug.xcconfig"; sourceTree = "<group>"; };
+		F66A45012AA26BA5000F4D65 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F66A45032AA26F46000F4D65 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F6D817D92AA792C200C1729D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F6D817DB2AA8C98600C1729D /* CharactersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersPresenter.swift; sourceTree = "<group>"; };
+		F6D817DF2AA8CA1A00C1729D /* CharactersProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersProtocols.swift; sourceTree = "<group>"; };
+		F6D817E12AA8D12F00C1729D /* CharactersModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModule.swift; sourceTree = "<group>"; };
+		F6D817E32AA8E0B400C1729D /* DetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModule.swift; sourceTree = "<group>"; };
+		F6D817E72AA8E10D00C1729D /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		F6D817E92AA8E11A00C1729D /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		F6D817EB2AA8E35900C1729D /* CharactersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRouter.swift; sourceTree = "<group>"; };
+		F6D817ED2AA8E9E600C1729D /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		F6D96C652AA0F30C001C268E /* MarvelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModel.swift; sourceTree = "<group>"; };
+		F6D96C672AA123A8001C268E /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		F6D96C6C2AA13130001C268E /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		F6D96C6F2AA1370E001C268E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F6D96C712AA13E1E001C268E /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		F6F044122AA0BE1800F8234D /* iOS10-HW21-Alexandr-Ivanov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS10-HW21-Alexandr-Ivanov.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F044152AA0BE1800F8234D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F044172AA0BE1800F8234D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6F044192AA0BE1800F8234D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6F044192AA0BE1800F8234D /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
 		F6F0441E2AA0BE1900F8234D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6F044212AA0BE1900F8234D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6F044232AA0BE1900F8234D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -29,17 +66,146 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259AE5B5F9BD523422B459FE /* Pods_iOS10_HW21_Alexandr_Ivanov.framework in Frameworks */,
+				F6D96C772AA24E21001C268E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D64CA5A01C03C46A9CBDF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EFBC14CA7DC49B42A77B956 /* Pods_iOS10_HW21_Alexandr_Ivanov.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D688A6775001F8F455D7A2AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B4CABBC65BA05F3C1F8A456 /* Pods-iOS10-HW21-Alexandr-Ivanov.debug.xcconfig */,
+				13C1DEE18349896463807B30 /* Pods-iOS10-HW21-Alexandr-Ivanov.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F66A45002AA26B81000F4D65 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F6D817E32AA8E0B400C1729D /* DetailModule.swift */,
+				F6D817E62AA8E0E500C1729D /* Interfaces */,
+				F6D817E52AA8E0CD00C1729D /* Implementations */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F66A45072AA6734F000F4D65 /* RequestService */ = {
+			isa = PBXGroup;
+			children = (
+				F6D96C712AA13E1E001C268E /* Keys.swift */,
+				F6D96C6C2AA13130001C268E /* RequestService.swift */,
+			);
+			path = RequestService;
+			sourceTree = "<group>";
+		};
+		F66A45082AA67362000F4D65 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F66A45032AA26F46000F4D65 /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		F6D817DD2AA8C9ED00C1729D /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				F6F044192AA0BE1800F8234D /* CharactersView.swift */,
+				F6D817DB2AA8C98600C1729D /* CharactersPresenter.swift */,
+				F6D96C6B2AA130D2001C268E /* Cell */,
+				F6D817EB2AA8E35900C1729D /* CharactersRouter.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		F6D817DE2AA8C9F800C1729D /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F6D817DF2AA8CA1A00C1729D /* CharactersProtocols.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F6D817E52AA8E0CD00C1729D /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				F66A45012AA26BA5000F4D65 /* DetailView.swift */,
+				F6D817E92AA8E11A00C1729D /* DetailPresenter.swift */,
+				F6D817ED2AA8E9E600C1729D /* DetailRouter.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		F6D817E62AA8E0E500C1729D /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F6D817E72AA8E10D00C1729D /* DetailProtocols.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F6D96C642AA0F2F7001C268E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6D96C652AA0F30C001C268E /* MarvelModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6D96C692AA1308C001C268E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F66A45002AA26B81000F4D65 /* Detail */,
+				F6D96C6A2AA130BD001C268E /* Characters */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F6D96C6A2AA130BD001C268E /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				F6D817E12AA8D12F00C1729D /* CharactersModule.swift */,
+				F6D817DE2AA8C9F800C1729D /* Interfaces */,
+				F6D817DD2AA8C9ED00C1729D /* Implementations */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		F6D96C6B2AA130D2001C268E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F6D96C672AA123A8001C268E /* CharacterTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F6D96C6E2AA136F0001C268E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6D96C6F2AA1370E001C268E /* String+Extensions.swift */,
+				F6D817D92AA792C200C1729D /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F6F044092AA0BE1700F8234D = {
 			isa = PBXGroup;
 			children = (
 				F6F044142AA0BE1800F8234D /* iOS10-HW21-Alexandr-Ivanov */,
 				F6F044132AA0BE1800F8234D /* Products */,
+				D688A6775001F8F455D7A2AC /* Pods */,
+				09D64CA5A01C03C46A9CBDF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +223,7 @@
 				F6F044292AA0BE5400F8234D /* App */,
 				F6F0442A2AA0BE5900F8234D /* Sources */,
 				F6F0442B2AA0BE6700F8234D /* Resources */,
-				F6F0442C2AA0BE7A00F8234D /* UI */,
+				F6F0442C2AA0BE7A00F8234D /* LaunchScreen */,
 			);
 			path = "iOS10-HW21-Alexandr-Ivanov";
 			sourceTree = "<group>";
@@ -74,7 +240,11 @@
 		F6F0442A2AA0BE5900F8234D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F6F044192AA0BE1800F8234D /* ViewController.swift */,
+				F66A45082AA67362000F4D65 /* Enums */,
+				F66A45072AA6734F000F4D65 /* RequestService */,
+				F6D96C6E2AA136F0001C268E /* Extensions */,
+				F6D96C692AA1308C001C268E /* Modules */,
+				F6D96C642AA0F2F7001C268E /* Model */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -88,12 +258,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F6F0442C2AA0BE7A00F8234D /* UI */ = {
+		F6F0442C2AA0BE7A00F8234D /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
 				F6F044202AA0BE1900F8234D /* LaunchScreen.storyboard */,
 			);
-			path = UI;
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,15 +273,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F044262AA0BE1900F8234D /* Build configuration list for PBXNativeTarget "iOS10-HW21-Alexandr-Ivanov" */;
 			buildPhases = (
+				4EF066D637A2012D19B0A98F /* [CP] Check Pods Manifest.lock */,
 				F6F0440E2AA0BE1700F8234D /* Sources */,
 				F6F0440F2AA0BE1700F8234D /* Frameworks */,
 				F6F044102AA0BE1700F8234D /* Resources */,
+				EF35CF04443638D7CF8E5419 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "iOS10-HW21-Alexandr-Ivanov";
+			packageProductDependencies = (
+				F6D96C762AA24E21001C268E /* SnapKit */,
+			);
 			productName = "iOS10-HW21-Alexandr-Ivanov";
 			productReference = F6F044122AA0BE1800F8234D /* iOS10-HW21-Alexandr-Ivanov.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +315,9 @@
 				Base,
 			);
 			mainGroup = F6F044092AA0BE1700F8234D;
+			packageReferences = (
+				F6D96C752AA24E21001C268E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F6F044132AA0BE1800F8234D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,14 +339,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EF066D637A2012D19B0A98F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS10-HW21-Alexandr-Ivanov-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF35CF04443638D7CF8E5419 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS10-HW21-Alexandr-Ivanov/Pods-iOS10-HW21-Alexandr-Ivanov-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS10-HW21-Alexandr-Ivanov/Pods-iOS10-HW21-Alexandr-Ivanov-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS10-HW21-Alexandr-Ivanov/Pods-iOS10-HW21-Alexandr-Ivanov-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6F0440E2AA0BE1700F8234D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6F0441A2AA0BE1800F8234D /* ViewController.swift in Sources */,
+				F66A45022AA26BA5000F4D65 /* DetailView.swift in Sources */,
+				F6D817E22AA8D12F00C1729D /* CharactersModule.swift in Sources */,
+				F6D96C682AA123A8001C268E /* CharacterTableViewCell.swift in Sources */,
+				F6D817EE2AA8E9E600C1729D /* DetailRouter.swift in Sources */,
+				F6D817DA2AA792C200C1729D /* UIViewController+Extensions.swift in Sources */,
+				F66A45042AA26F46000F4D65 /* Enums.swift in Sources */,
+				F6D96C702AA1370E001C268E /* String+Extensions.swift in Sources */,
+				F6D96C6D2AA13130001C268E /* RequestService.swift in Sources */,
+				F6F0441A2AA0BE1800F8234D /* CharactersView.swift in Sources */,
+				F6D817E82AA8E10D00C1729D /* DetailProtocols.swift in Sources */,
 				F6F044162AA0BE1800F8234D /* AppDelegate.swift in Sources */,
+				F6D817EC2AA8E35900C1729D /* CharactersRouter.swift in Sources */,
+				F6D817E02AA8CA1A00C1729D /* CharactersProtocols.swift in Sources */,
+				F6D817DC2AA8C98600C1729D /* CharactersPresenter.swift in Sources */,
+				F6D817E42AA8E0B400C1729D /* DetailModule.swift in Sources */,
 				F6F044182AA0BE1800F8234D /* SceneDelegate.swift in Sources */,
+				F6D96C722AA13E1E001C268E /* Keys.swift in Sources */,
+				F6D96C662AA0F30C001C268E /* MarvelModel.swift in Sources */,
+				F6D817EA2AA8E11A00C1729D /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +538,7 @@
 		};
 		F6F044272AA0BE1900F8234D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B4CABBC65BA05F3C1F8A456 /* Pods-iOS10-HW21-Alexandr-Ivanov.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +551,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +567,7 @@
 		};
 		F6F044282AA0BE1900F8234D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C1DEE18349896463807B30 /* Pods-iOS10-HW21-Alexandr-Ivanov.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +580,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6D96C752AA24E21001C268E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6D96C762AA24E21001C268E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6D96C752AA24E21001C268E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6F0440A2AA0BE1700F8234D /* Project object */;
 }
