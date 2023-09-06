@@ -1,23 +1,8 @@
 import UIKit
 import SnapKit
 
-class DetailViewController: UIViewController {
-    var character: Character? {
-        didSet {
-            nameLabel.text = character?.name
-
-            if character?.description == "" {
-                descriptionLabel.text = "No data"
-                descriptionLabel.textAlignment = .center
-            } else {
-                descriptionLabel.text = character?.description
-            }
-
-            RequestService.shared.getImage(path: character?.thumbnail?.getImagePath(with: ImageSize.fantastic)) { [weak self] data in
-                self?.characterImage.image = UIImage(data: data)
-            }
-        }
-    }
+class DetailView: UIViewController {
+    var presenter: DetailViewOutput?
 
     // MARK: - Outlets
 
@@ -54,6 +39,7 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.loadData()
         setupView()
         setupHierarchy()
         setupLayout()
@@ -87,5 +73,20 @@ class DetailViewController: UIViewController {
             make.leading.trailing.equalTo(view).inset(40)
             make.top.equalTo(characterImage.snp.bottom).offset(30)
         }
+    }
+}
+
+// MARK: - DetailViewInput
+
+extension DetailView: DetailViewInput {
+    func setCharacter(name: String, description: String, imageData: Data) {
+        if description == "" {
+            descriptionLabel.text = "No data"
+            descriptionLabel.textAlignment = .center
+        } else {
+            descriptionLabel.text = description
+        }
+        nameLabel.text = name
+        characterImage.image = UIImage(data: imageData)
     }
 }

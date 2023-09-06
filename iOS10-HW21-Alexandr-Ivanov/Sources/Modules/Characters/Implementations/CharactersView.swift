@@ -2,8 +2,8 @@ import UIKit
 import Alamofire
 import SnapKit
 
-class CharactersViewController: UIViewController {
-    private var characters: [Character] = []
+class CharactersView: UIViewController {
+    var presenter: CharactersViewOutput?
 
     // MARK: - Outlets
 
@@ -45,22 +45,11 @@ class CharactersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        executeCall()
+        presenter?.loadData()
         setupView()
         setupHierarchy()
         setupLayout()
         setupNotifications()
-    }
-
-    private func executeCall() {
-        RequestService.shared.fetchCharacters { [weak self] character, error in
-            if let error = error {
-                self?.alertController(title: error.code, message: error.message)
-            }
-            self?.characters = character ?? []
-            self?.tableView.reloadData()
-        }
-        cancelButton.isEnabled = false
     }
 
     // MARK: - Setup
@@ -117,7 +106,7 @@ class CharactersViewController: UIViewController {
     }
 
     @objc func cancelButtonTapped() {
-        executeCall()
+        presenter?.loadData()
         searchTextField.resignFirstResponder()
         searchTextField.text = ""
     }
@@ -125,17 +114,9 @@ class CharactersViewController: UIViewController {
 
 // MARK: - UITextFieldDelegate
 
-extension CharactersViewController: UITextFieldDelegate {
+extension CharactersView: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let name = textField.text?.first == " " ? String(textField.text?.dropFirst() ?? "") : textField.text
-        RequestService.shared.searchCharacter(with: name ?? "") { [weak self] character, error in
-            if let error = error {
-                self?.alertController(title: error.code, message: error.message)
-            }
-            self?.characters = character ?? []
-            self?.tableView.reloadData()
-        }
-        cancelButton.isEnabled = true
+        presenter?.searchCharaters(with: textField.text ?? "")
         textField.resignFirstResponder()
         return true
     }
@@ -143,30 +124,48 @@ extension CharactersViewController: UITextFieldDelegate {
 
 // MARK: - UITableViewDelegate
 
-extension CharactersViewController: UITableViewDelegate {
+extension CharactersView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         searchTextField.resignFirstResponder()
-        let detail = DetailViewController()
-        detail.character = characters[indexPath.row]
-        present(detail, animated: true)
+        presenter?.presentDetail(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
 // MARK: - UITableViewDataSource
 
-extension CharactersViewController: UITableViewDataSource {
+extension CharactersView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        characters.count
+        presenter?.getCharactersCount() ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CharacterTableViewCell.identifier) as? CharacterTableViewCell else { return UITableViewCell() }
-        cell.character = characters[indexPath.row]
+        presenter?.getCharacterImage(at: indexPath, completion: { data in
+            cell.characterThumbnail = UIImage(data: data)
+        })
+        cell.character = presenter?.getCharacter(at: indexPath)
+
         return cell
+    }
+}
+
+// MARK: - CharactersViewInput
+
+extension CharactersView: CharactersViewInput {
+    func cancelButton(is enabled: Bool) {
+        cancelButton.isEnabled = enabled
+    }
+
+    func reloadData() {
+        tableView.reloadData()
+    }
+
+    func showAlert(code: String, message: String) {
+        alertController(title: code, message: message)
     }
 }

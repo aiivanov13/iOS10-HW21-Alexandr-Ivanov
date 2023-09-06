@@ -20,6 +20,8 @@ enum CodeValue: Decodable {
     }
 }
 
+// MARK: - Model
+
 struct CharacterDataWrapper: Decodable {
     var code: CodeValue?
     var message: String?
@@ -50,7 +52,7 @@ struct Thumbnail: Decodable {
     var path: String?
     var `extension`: String?
 
-    func getImagePath(with imageSize: String) -> String {
-        (path ?? "") + "/\(imageSize)." + (`extension` ?? "")
+    func getImagePath(with imageSize: String, completion: @escaping (String) -> Void) {
+        completion((path ?? "") + "/\(imageSize)." + (`extension` ?? ""))
     }
 }

@@ -3,14 +3,17 @@ import SnapKit
 
 class CharacterTableViewCell: UITableViewCell {
     class var identifier: String { "character" }
+
+    var characterThumbnail: UIImage? {
+        didSet {
+            characterImage.image = characterThumbnail
+        }
+    }
     
     var character: Character? {
         didSet {
             nameLabel.text = character?.name
             modifiedLabel.text = "Modified: " + (character?.modified?.date ?? "")
-            RequestService.shared.getImage(path: character?.thumbnail?.getImagePath(with: ImageSize.large)) { [weak self] data in
-                self?.characterImage.image = UIImage(data: data)
-            }
         }
     }
 
